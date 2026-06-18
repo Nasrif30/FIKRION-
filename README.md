@@ -1,6 +1,23 @@
 # FIKRION Autonomous Security Platform
 
+<!-- PASTE YOUR MAIN DASHBOARD SCREENSHOT HERE: ![FIKRION Dashboard](image-url.png) -->
+
 **FIKRION** is an intelligent, AI-driven endpoint security and system monitoring platform built with Rust (Tauri), React, and Tailwind CSS. It acts as an autonomous Security Operations Center (SOC), combining system-level telemetry, real-time threat intelligence, and advanced AI reasoning to monitor, investigate, and protect endpoints.
+
+## Core Features
+
+<!-- Copy and paste this block for each feature you want to highlight -->
+### 1. [Feature Name]
+<!-- PASTE YOUR FEATURE SCREENSHOT HERE: ![Feature Name](image-url.png) -->
+*Describe the feature here. What does it do? How does it help the user?*
+
+### 2. [Feature Name]
+<!-- PASTE YOUR FEATURE SCREENSHOT HERE: ![Feature Name](image-url.png) -->
+*Describe the feature here. What does it do? How does it help the user?*
+
+### 3. [Feature Name]
+<!-- PASTE YOUR FEATURE SCREENSHOT HERE: ![Feature Name](image-url.png) -->
+*Describe the feature here. What does it do? How does it help the user?*
 
 ## Architecture and Flow Diagram
 
