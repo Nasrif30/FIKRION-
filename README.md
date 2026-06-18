@@ -1,4 +1,5 @@
 # FIKRION Autonomous Security Platform
+*Developed by A. HALIDDIN — "just a nerd in his habitat"*
 
 <!-- PASTE YOUR MAIN DASHBOARD SCREENSHOT HERE: ![FIKRION Dashboard](image-url.png) -->
 
@@ -100,3 +101,16 @@ To compile and build for production deployment:
 ```bash
 npm run tauri build
 ```
+
+## The Meaning of FIKRION
+
+Most security products are named after physical barriers: Sentinel, Shield, Guard, Fortress, Armor. FIKRION is different. It is named after a cognitive process — *thinking* — which positions it as an engine that understands threats rather than just blocks them.
+
+* **FIKR** comes from Arabic, written as فكر, meaning Thought, Thinking, or Intelligence. It is a classical Arabic root used across philosophy, theology, and literature to describe deep deliberate reasoning — not just thinking, but analytical contemplation.
+* **ION** comes from Greek and modern physics. An ion is a charged particle — an atom or molecule that carries energy and moves with purpose and direction. In technology branding, the ION suffix also suggests momentum, signal, and transmission.
+
+**Combined Meaning:** *A Thought That Moves With Purpose*, or more formally: *An Intelligent Thinking Engine* — a mind that not only reasons but acts on what it discovers.
+
+**Tagline Alignment:** *Think Before the Threat* — directly reflects the FIKR root. FIKRION does not react. It thinks first.
+
+*(Pronunciation: FIK-ree-ON)*
