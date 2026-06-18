@@ -7,18 +7,25 @@
 
 ## Core Features
 
-<!-- Copy and paste this block for each feature you want to highlight -->
-### 1. [Feature Name]
-<!-- PASTE YOUR FEATURE SCREENSHOT HERE: ![Feature Name](image-url.png) -->
-*Describe the feature here. What does it do? How does it help the user?*
+### 1. Autonomous Security Dashboard
+<!-- PASTE YOUR DASHBOARD SCREENSHOT HERE: ![Dashboard](image-url.png) -->
+*The command center of FIKRION. It provides a real-time overview of your system's health, active protection modules, recent detections, and dynamically calculates the "Think Score" based on current threat intelligence.*
 
-### 2. [Feature Name]
-<!-- PASTE YOUR FEATURE SCREENSHOT HERE: ![Feature Name](image-url.png) -->
-*Describe the feature here. What does it do? How does it help the user?*
+### 2. Real-Time Process & Telemetry Monitoring
+<!-- PASTE YOUR REAL-TIME MONITOR SCREENSHOT HERE: ![Real-Time Monitor](image-url.png) -->
+*Deep OS-level visibility. FIKRION tracks every active process, analyzing CPU and RAM usage while cross-referencing behaviors against known threat signatures to assign dynamic risk scores.*
 
-### 3. [Feature Name]
-<!-- PASTE YOUR FEATURE SCREENSHOT HERE: ![Feature Name](image-url.png) -->
-*Describe the feature here. What does it do? How does it help the user?*
+### 3. Interactive AI Security Assistant
+<!-- PASTE YOUR AI ASSISTANT SCREENSHOT HERE: ![AI Assistant](image-url.png) -->
+*A conversational interface directly tied to your machine's telemetry. Ask FIKRION if your CPU is slow, and it will analyze your actual system logs and running processes to give you a contextual, intelligent answer.*
+
+### 4. Advanced Browser Shield
+<!-- PASTE YOUR BROWSER SHIELD SCREENSHOT HERE: ![Browser Shield](image-url.png) -->
+*Dedicated protection for your web experience. FIKRION monitors active browser sessions (Chrome, Edge, Brave, Firefox) to block phishing attempts, crypto-miners, and clipboard hijacking in real-time.*
+
+### 5. Plug-and-Play AI Engine Configuration
+<!-- PASTE YOUR SETTINGS SCREENSHOT HERE: ![Settings](image-url.png) -->
+*Total control over your intelligence provider. Run entirely offline and private using Local Ollama models, or plug in your API keys for Groq, Anthropic, or OpenAI for maximum reasoning power.*
 
 ## Architecture and Flow Diagram
 
