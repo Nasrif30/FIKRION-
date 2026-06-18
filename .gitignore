@@ -33,3 +33,6 @@ dist-ssr
 # Tauri / Rust
 src-tauri/target/
 src-tauri/Cargo.lock
+
+# Internal Documentation
+*.MD
