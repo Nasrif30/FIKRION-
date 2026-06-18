@@ -1,0 +1,5 @@
+Design the software with a clean, modular architecture where every major feature is independent and replaceable. Separate the frontend, backend, AI engine, detection engine, kernel communication, browser protection, threat intelligence, plugins, databases, and cloud services into well-defined modules.
+
+The user interface should follow a modern, minimal design philosophy inspired by Apple's Human Interface Guidelines, macOS, iOS, Arc Browser, Raycast, and Linear. Use clean typography, generous spacing, rounded corners, subtle translucency only where appropriate, smooth animations, intuitive navigation, and consistent visual hierarchy. Avoid flashy effects, excessive gradients, gaming aesthetics, or unnecessary visual clutter. Every interaction should feel fast, professional, and polished.
+
+Prioritize privacy by ensuring that sensitive analysis can be performed entirely offline. Clearly distinguish between local processing and cloud services, allowing users full control over their data. Every feature should support transparency, auditability, and explainability so users understand exactly what the software is doing and why.

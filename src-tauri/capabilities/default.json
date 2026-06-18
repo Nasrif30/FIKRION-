@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.tauri.app/config/2/capabilities.schema.json",
+  "identifier": "default",
+  "description": "FIKRION default capability set",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "opener:default"
+  ]
+}

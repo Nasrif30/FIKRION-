@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── FIKRION Design System ─────────────────────────────────────────── */
+/* Hybrid aesthetic: Apple/Linear structure + FIKRION brand identity     */
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { font-size: 14px; -webkit-font-smoothing: antialiased; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #09090B;
+    color: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow: hidden; /* Tauri window — no OS scrollbar */
+    user-select: none;
+  }
+
+  /* Allow text selection in specific areas */
+  .selectable { user-select: text; }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 2px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+}
+
+@layer components {
+  /* ── Glass Card ─────────────────────────── */
+  .glass-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-200;
+  }
+  .glass-card-hover:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.10);
+  }
+
+  /* ── Status Pills ───────────────────────── */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .pill-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .pill-critical {
+    @apply pill;
+    background: rgba(255,59,48,0.15);
+    color: #FF3B30;
+    border: 1px solid rgba(255,59,48,0.25);
+  }
+  .pill-high {
+    @apply pill;
+    background: rgba(255,107,53,0.15);
+    color: #FF6B35;
+    border: 1px solid rgba(255,107,53,0.25);
+  }
+  .pill-medium {
+    @apply pill;
+    background: rgba(255,159,10,0.15);
+    color: #FF9F0A;
+    border: 1px solid rgba(255,159,10,0.25);
+  }
+  .pill-low {
+    @apply pill;
+    background: rgba(255,214,10,0.10);
+    color: #FFD60A;
+    border: 1px solid rgba(255,214,10,0.2);
+  }
+  .pill-safe {
+    @apply pill;
+    background: rgba(48,209,88,0.12);
+    color: #30D158;
+    border: 1px solid rgba(48,209,88,0.25);
+  }
+  .pill-info {
+    @apply pill;
+    background: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .pill-brand {
+    @apply pill;
+    background: rgba(10,132,255,0.15);
+    color: #0A84FF;
+    border: 1px solid rgba(10,132,255,0.25);
+  }
+
+  /* ── Buttons ────────────────────────────── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+  }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  .btn-primary {
+    @apply btn;
+    background: #0A84FF;
+    color: #fff;
+  }
+  .btn-primary:hover:not(:disabled) { background: #1A91FF; }
+  .btn-primary:active:not(:disabled) { background: #0070E0; transform: scale(0.98); }
+
+  .btn-secondary {
+    @apply btn;
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .btn-secondary:hover:not(:disabled) { background: rgba(255,255,255,0.12); }
+
+  .btn-danger {
+    @apply btn;
+    background: rgba(255,59,48,0.15);
+    color: #FF3B30;
+    border: 1px solid rgba(255,59,48,0.25);
+  }
+  .btn-danger:hover:not(:disabled) { background: rgba(255,59,48,0.25); }
+
+  .btn-ghost {
+    @apply btn;
+    background: transparent;
+    color: rgba(255,255,255,0.5);
+  }
+  .btn-ghost:hover:not(:disabled) { background: rgba(255,255,255,0.05); color: #fff; }
+
+  /* ── Metric Tile ────────────────────────── */
+  .metric-tile {
+    @apply glass-card;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* ── Input ──────────────────────────────── */
+  .input {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.15s;
+    width: 100%;
+  }
+  .input:focus { border-color: rgba(10,132,255,0.6); }
+  .input::placeholder { color: rgba(255,255,255,0.3); }
+
+  /* ── Section Label ──────────────────────── */
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ── Thinking Dots ──────────────────────── */
+  .thinking-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #0A84FF;
+    animation: thinking 1.4s ease-in-out infinite;
+  }
+  .thinking-dot:nth-child(2) { animation-delay: 0.2s; }
+  .thinking-dot:nth-child(3) { animation-delay: 0.4s; }
+
+  /* ── Divider ────────────────────────────── */
+  .divider { height: 1px; background: rgba(255,255,255,0.06); }
+}
+
+@layer utilities {
+  .text-primary { color: #ffffff; }
+  .text-secondary { color: rgba(255,255,255,0.6); }
+  .text-tertiary { color: rgba(255,255,255,0.35); }
+  .text-brand { color: #0A84FF; }
+  .text-safe { color: #30D158; }
+  .text-threat { color: #FF3B30; }
+  .text-warning { color: #FF9F0A; }
+
+  .bg-elevated { background: #111113; }
+  .bg-overlay { background: #18181B; }
+
+  .border-subtle { border-color: rgba(255,255,255,0.06); }
+  .border-strong { border-color: rgba(255,255,255,0.12); }
+
+  .font-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace; }
+
+  /* Tauri drag region for frameless window */
+  .drag-region { -webkit-app-region: drag; app-region: drag; }
+  .no-drag { -webkit-app-region: no-drag; app-region: no-drag; }
+}
+
+/* ── Keyframes ────────────────────────────────────────────────────────── */
+@keyframes thinking {
+  0%, 80%, 100% { transform: scale(0.5); opacity: 0.3; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseRing {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes scanSweep {
+  0% { transform: translateY(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(400%); opacity: 0; }
+}
+
+/* ── Splash Screen ────────────────────────────────────────────────────── */
+.splash-logo-path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawPath 1.8s ease-out 0.3s forwards;
+}
+
+@keyframes drawPath {
+  to { stroke-dashoffset: 0; }
+}
