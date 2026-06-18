@@ -25,7 +25,7 @@
 
 ### 5. Plug-and-Play AI Engine Configuration
 <!-- PASTE YOUR SETTINGS SCREENSHOT HERE: ![Settings](image-url.png) -->
-*Total control over your intelligence provider. Run entirely offline and private using Local Ollama models, or plug in your API keys for Groq, Anthropic, or OpenAI for maximum reasoning power.*
+*Total control over your intelligence provider. Run entirely offline and private using Local Ollama models, seamlessly connect via MCP Server (Model Context Protocol) without needing API keys, or plug in your credentials for Groq, Anthropic, or OpenAI for maximum reasoning power.*
 
 ## Architecture and Flow Diagram
 
