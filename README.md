@@ -8,23 +8,28 @@
 ## Core Features
 
 ### 1. Autonomous Security Dashboard
-<!-- PASTE YOUR DASHBOARD SCREENSHOT HERE: ![Dashboard](image-url.png) -->
+<img width="1802" height="1017" alt="Screenshot 2026-06-18 191639" src="https://github.com/user-attachments/assets/245fd5b2-c5d8-43de-a064-f4bdf8ee0caf" />
+
 *The command center of FIKRION. It provides a real-time overview of your system's health, active protection modules, recent detections, and dynamically calculates the "Think Score" based on current threat intelligence.*
 
 ### 2. Real-Time Process & Telemetry Monitoring
-<!-- PASTE YOUR REAL-TIME MONITOR SCREENSHOT HERE: ![Real-Time Monitor](image-url.png) -->
+<img width="1796" height="1012" alt="Screenshot 2026-06-18 191715" src="https://github.com/user-attachments/assets/5e414105-3353-4885-b566-162a2691e344" />
+
 *Deep OS-level visibility. FIKRION tracks every active process, analyzing CPU and RAM usage while cross-referencing behaviors against known threat signatures to assign dynamic risk scores.*
 
 ### 3. Interactive AI Security Assistant
-<!-- PASTE YOUR AI ASSISTANT SCREENSHOT HERE: ![AI Assistant](image-url.png) -->
+<img width="1798" height="1013" alt="Screenshot 2026-06-18 191856" src="https://github.com/user-attachments/assets/7fe3d2da-16d4-4770-82ac-7894068ffa19" />
+
 *A conversational interface directly tied to your machine's telemetry. Ask FIKRION if your CPU is slow, and it will analyze your actual system logs and running processes to give you a contextual, intelligent answer.*
 
 ### 4. Advanced Browser Shield
-<!-- PASTE YOUR BROWSER SHIELD SCREENSHOT HERE: ![Browser Shield](image-url.png) -->
+<img width="1797" height="1020" alt="Screenshot 2026-06-18 191941" src="https://github.com/user-attachments/assets/9edcc35d-a11f-4cfd-b017-1ecb649157b1" />
+
 *Dedicated protection for your web experience. FIKRION monitors active browser sessions (Chrome, Edge, Brave, Firefox) to block phishing attempts, crypto-miners, and clipboard hijacking in real-time.*
 
 ### 5. Plug-and-Play AI Engine Configuration
-<!-- PASTE YOUR SETTINGS SCREENSHOT HERE: ![Settings](image-url.png) -->
+<img width="1800" height="1015" alt="Screenshot 2026-06-18 191959" src="https://github.com/user-attachments/assets/53e57f01-80f6-4b72-a8b7-68dde2e41939" />
+
 *Total control over your intelligence provider. Run entirely offline and private using Local Ollama models, seamlessly connect via MCP Server (Model Context Protocol) without needing API keys, or plug in your credentials for Groq, Anthropic, or OpenAI for maximum reasoning power.*
 
 ## Architecture and Flow Diagram
